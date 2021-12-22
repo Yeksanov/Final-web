@@ -1,0 +1,895 @@
+*{
+  padding: 0;
+  margin: 0;
+
+}
+html{
+  overflow-x:hidden;
+ 
+ 
+}
+
+body{
+ 
+    margin: 0;
+    font-family: AudiType-ExtendedBold,Helvetica,Arial,sans-serif;
+    /*height: 100%;*/
+   
+}
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  background: rgba(255,255,255,.5);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 0px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-logo {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    left: 100px;}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li a:hover{
+  color: grey;
+
+}
+
+.menu-main li {
+  display: inline-block;
+}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 71px;
+  padding-left: 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #000000;
+  transition:.3s linear;
+  left: -700px;
+}
+
+.menu-main a:hover:before {opacity: 1;}
+@media (max-width: 376px) {
+
+.menu-main {
+  float: none;
+  z-index: 2;
+}
+.top-menu {
+  text-align: center;
+  padding: 30px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 376px) {
+  .menu-main li {display: block;}
+}
+
+
+#myBtn {
+display: none; /* Hidden by default */
+position: fixed; /* Fixed/sticky position */
+bottom: 20px; /* Place the button at the bottom of the page */
+right: 30px; /* Place the button 30px from the right */
+z-index: 99; /* Make sure it does not overlap */
+border: none; /* Remove borders */
+outline: none; /* Remove outline */
+background-color: black; /* Set a background color */
+color: white; /* Text color */
+cursor: pointer; /* Add a mouse pointer on hover */
+padding: 15px; /* Some padding */
+border-radius: 10px; /* Rounded corners */
+font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/*Ауди на главной странице с надписью*/
+.box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin:  auto 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .box-inner img {
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+  }
+  hr {
+margin-top: -20px;
+border: 1px solid #000;
+  }
+  .txt h2{
+    position: absolute;
+    left: 450px;
+    right: 0;
+    padding: 0px;
+    top: 100px;
+    margin-top: -40px;
+    text-align: center;
+    color: white;
+    width: 600px;
+    text-align: center;
+    text-align: center;
+    letter-spacing: 5px;
+  }
+  .txt button{
+    font-family: AudiType-ExtendedBold,Helvetica,Arial,sans-serif;;
+      position: relative;
+      width: 200px;
+      height: 50px;
+      background: none;
+      color: white;
+      border-color: white;
+      top: 0px;
+      left: 680px;
+      top: -130px;
+  }
+  .txt p{
+    position: absolute;
+    left: 360px;
+    padding: 0px;
+    top: 400px;
+    text-align: center;
+    color: white;
+    width: 800px;
+    
+  }
+  .txt h2 p{
+    font-family: 'Forum', cursive;
+    color: white;
+    display: inline-block;
+    line-height: 85px;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-width: 1px 0;
+    border-color: rgba(255,255,255,0.5);
+    border-style: solid;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    
+  } 
+  .box:hover img {
+    transform: scale(1.1);
+  }
+  
+
+
+.sidenav {
+height: 100%; /* Full-height: remove this if you want "auto" height */
+width: 160px; /* Set the width of the sidebar */
+position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+z-index: 1; /* Stay on top */
+top: 300px; /* Stay at the top */
+right:  0;
+background-color: none; /* Black */
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 20px;
+}
+#mySidenav a {
+position: absolute; /* Position them relative to the browser window */
+right:  -60px; /* Position them outside of the screen */
+transition: 0.3s; /* Add transition on hover */
+padding: 15px; /* 15px padding */
+width: 120px; /* Set a specific width */
+text-decoration: none; /* Remove underline */
+font-size: 20px; /* Increase font size */
+color: white; /* White text color */
+border-radius: 5px 0px 0px 5px; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+right: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+top: 20px;
+background-color: black;
+}
+
+#blog {
+top: 80px;
+background-color: black; 
+}
+
+#projects {
+top: 140px;
+background-color: black; 
+}
+
+#contact {
+top: 200px;
+background-color: black;
+}
+
+
+
+/*
+The world of Audi
+*/
+.text1{
+    font-family: AudiType-ExtendedBold,Helvetica,Arial,sans-serif;
+      position: relative;
+      top: 100px;
+      margin: 0px;
+      color: rgb(0, 0, 0);
+      font-size: 70px;
+      text-align: center;
+      left: 0px;
+      word-spacing: 10px;
+      font-weight: 400;
+      letter-spacing: 7px;
+
+  }
+  .text2{
+      font-family: AudiType-ExtendedBold,Helvetica,Arial,sans-serif;
+      position: relative;
+      top: 140px;
+      margin: 0px;
+      color: rgb(0, 0, 0);
+      font-size: 20px;
+      text-align: left;
+      width: 1000px;
+      text-align: center;
+      float: center;
+      left: 260px;
+      word-spacing: 3px;
+
+  }
+
+
+
+.image {
+ overflow:hidden;
+ position: relative;
+ width: 650px;
+ height:350;
+ margin: 50px 60px 10px 30px;
+ left: 20px;
+ top: 250px;
+
+ }
+
+.image img {
+ width: 650px;
+ height: 350px;
+ }
+ 
+.image {
+
+float: left;
+}
+
+.image h3,h6,h5{
+  margin-top: 15px;
+}
+
+
+.sound {
+ overflow:hidden;
+ position: relative;
+ width: 100%;
+ height: 450px;
+ margin: 50px 60px 10px 30px;
+ left: -30px;
+ top: 250px;
+
+ }
+
+.sound img {
+ width: 100%;
+ height: 450px;
+ z-index: -1;
+ }
+ 
+.sound{
+float:left;
+}
+
+
+.soundsmall {
+  z-index: 2;
+  position: relative;
+  top: -137px;
+  left: 260px;
+  height: 0px;
+}
+.soundsmall img{
+  z-index: 2;
+  width: 500px;
+  height: 300px;
+  
+}
+
+.e-Mobility {
+  
+  width: 200px;
+  position: relative;
+  top: -75px;
+  color: white;
+  left: 870px;
+  
+  z-index: 2;
+}
+
+.e-Mobility h6{
+  width: 200px;
+}
+.e-Mobility h4{
+  width: 400px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.e-Mobility h5{
+  width: 475px;
+  margin-bottom: 15px;
+}
+.e-Mobility button{
+ font-family:  'Montserrat', sans-serif;
+      position: relative;
+      width: 200px;
+      height: 40px;
+      background: none;
+      color: white;
+      border-color: white;
+      cursor: pointer;
+  
+}
+/*Надпись Discover the world of Audi после шумоподавления*/
+.discover{
+  text-align: center;
+  position: relative;
+  top: 100px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 30px; }
+
+
+
+.company_models {
+ overflow:hidden;
+ position: relative;
+ width: 550px;
+ height:250;
+ margin: 50px -23px 10px 30px;
+ left: 150px;
+ top: 100px;
+
+ }
+
+.company_models img {
+ width: 550px;
+ height: 250px;
+ }
+ 
+
+.company_models {
+ 
+float:left;
+}
+
+
+
+
+.careers_audi {
+ overflow:hidden;
+ position: relative;
+ width: 550px;
+ height:250;
+ margin: 50px -23px 10px 30px;
+ left: 150px;
+ top: 43px;
+
+ }
+
+.careers_audi img {
+ width: 550px;
+ height: 250px;
+ }
+ 
+.careers_audi {
+ 
+float:left;
+}
+
+
+.textCompany{
+  color: white;
+  font-size: 25px;
+}
+#first{
+   position: relative;
+   top: 260px;
+   left: -730px;
+   }
+#second{
+   position: relative;
+   top: 480px;
+   left: -730px;
+   }
+#third{
+   position: relative;
+   top: 170px;
+   left: -170px;
+   }
+#fourth{
+   position: relative;
+   top: 391px;
+   left: -240px;
+   }
+
+
+.audiinyourcountry {
+ overflow:hidden;
+ position: relative;
+ width: 100%;
+ height:350;
+ margin: 50px 60px 10px 30px;
+ left: -30px;
+ top: 150px;
+ z-index: -2;
+
+ }
+
+.audiinyourcountry img {
+ width: 100%;
+ height: 350px;
+
+ }
+ 
+.audiinyourcountry {
+ 
+float:left;
+}
+
+#inyourcountry{
+  font-family:'Montserrat', sans-serif;
+  color: white;
+  z-index: 2;
+  width: 750px;
+  text-align: center;
+  position: relative;
+  left:  340px;
+  top: -70px;
+  word-spacing: 5px;
+  
+  font-size: 20px;
+ 
+ /* margin-left: 500px;*/
+
+
+}
+
+.inyoursecondpart{
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  z-index: 2;
+  width: 750px;
+  text-align: center;
+  position: relative;
+  left:  340px;
+  top: -70px;
+  word-spacing: 5px;
+  
+  font-size: 20px;
+
+}
+
+/* Let's style the wrapper in such away that, 
+it should always be at the center of the browser */
+.wrapper {
+  position: absolute;
+  top: 3500px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+}
+
+/* Style the Un-order list by setting its list-style to none */
+.wrapper ul {
+  list-style: none;
+}
+
+/* Style the list items inside the UL list, by setting its width, height and line-height 
+  and float them to left and set its border and border-radius.
+ */
+.wrapper ul li {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #D8E2DC;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+/* Style the icons by setting its color and margin-top value to 20px 
+to align it properly */
+.wrapper ul li .fa {
+  color: #D8E2DC;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+  to icons for glowing effect and use transition property for smooth transition effect. */
+/*facebook*/
+.wrapper ul li:hover.facebook {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+/*twitter*/
+.wrapper ul li:hover.twitter {
+  border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+/* instagram */
+.wrapper ul li:hover.instagram {
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+/* google */
+.wrapper ul li:hover.google {
+  border: 5px solid #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-google {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+/* whatsapp */
+.wrapper ul li:hover.youtube {
+  border: 5px solid red;
+  box-shadow: 0 0 15px red;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-youtube {
+  color: red;
+  text-shadow: 0 0 15px red;
+  transition: all 0.5s ease;
+
+}
+#bottom{
+  position: relative;
+  top: 200px;
+  margin-top: 200px; 
+  opacity: 0.4;
+  margin: 0 auto;
+  width:  1200px;
+}
+.header{
+        display: none;
+      }
+      #toggle{
+        display: none;
+      }
+      label{
+        display: none;
+    }
+    .txt h2{
+      font-size:80px; 
+    }
+    .txt p{
+      font-size: 25px;
+    }
+#butt{
+  cursor: pointer;
+}
+
+/* media queries */
+
+
+ .header{
+        display: none;
+      }
+      #toggle{
+        display: none;
+      }
+      label{
+        display: none;
+    }
+
+
+
+@media screen and (max-width: 376px){
+  body{
+    overflow-x: scroll;
+  } 
+  .top-menu{
+    display: none;
+  } 
+.header a{
+  text-decoration: none;
+  color: #000;
+}
+  .sidenav{
+    display: none;
+}
+.menu-main{
+  display: none;
+}
+
+.menu{
+display: none;
+}
+.navbar-logo{
+   display: none;
+}
+
+label{
+display: block;
+}
+
+label{
+margin: 10px 0 10px 10px ;
+font-size: 35px;
+cursor: pointer;
+}
+
+#toggle:checked + .header{
+display: none;
+}
+.header div{
+border-top: 1px solid black ;
+padding: 10px 1px;
+text-align: center;
+width: 376px;
+}
+.header{
+display: block;
+font-size: 20px;
+}
+  
+
+  .box img{
+    
+
+    width: 100%;
+    height: 300px;
+  }
+  .text1{
+    position: relative;
+    top: 0px;
+    font-size: 23px;
+  }
+  .text2{
+    position: relative;
+    top: 10px;
+     margin-left: -223px;
+    width: 300px;
+  }
+  .image{
+    position: relative;
+    top: 0px;
+  }
+  #raceee{
+    display: none;
+  }
+
+  .image img{
+    width: 300px;
+    height: 200px;
+    margin-left: -25px;}
+
+  .image h5{
+    width: 300px;
+    margin-left: 0px;
+    margin-top: 60px;
+    color: black;
+    position: relative;
+    top: -47px;
+  } 
+  
+
+  .soundsmall{
+    display: none;
+  }
+  .sound{
+    position: relative;
+    top: 10px;
+  }
+  .sound img{
+    height: 300px;
+
+  }
+  .e-Mobility h6,h4,h5{
+    position: relative;
+    top: -350px;
+
+    
+    margin-left: -850px;
+   }
+  .e-Mobility h5{
+    width: 320px;
+    text-align: center;
+  }
+  .e-Mobility button{
+    position: relative;
+    left: -795px;
+    top: -320px;
+  }
+  .discover{
+    position: relative;
+    top: -570px;
+  }
+  .company_models {
+    margin-left: -200px;
+    position: relative;
+    top: -450px;
+  }
+  .company_models img{
+
+    width: 425px;
+
+  }
+  .careers_audi{
+    margin-left: -200px;
+    position: relative;
+    top: -450px;
+  }
+  .careers_audi img{
+    width: 425px;
+   
+  }
+  #first{
+   position: relative;
+   top: -1550px;
+   left: 110px;
+   color: white;
+
+   }
+#second{
+   position: relative;
+   top: -975px;
+   left: 110px;
+
+   }
+#third{
+   position: relative;
+   top: -1340px;
+   left: 110px;
+
+   }
+#fourth{
+   position: relative;
+   top: -750px;
+   left: 40px;
+   }
+
+   #inyourcountry{
+    position: relative;
+    left: -420px;
+    top:  -480px;
+   }
+
+ 
+  .audiinyourcountry{
+    position: relative;
+    top: -670px;
+  }
+  .wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    top: -150px;
+    text-align: center;
+      width: 100px;
+      display: flex;
+      left:  180px;
+  }
+  .wrapper ul li{
+      top: 100px;
+      margin:15px;
+  }
+  .wrapper ul li.google{
+      margin-left: 15px;
+  }
+  .wrapper ul li.facebook{
+      margin-left: 15px;
+  }
+  .wrapper ul li.twitter{
+      margin-left: 15px;
+  }
+  .wrapper ul li.youtube{
+      margin-left: 15px;
+  }
+  .wrapper ul li{
+      margin-top: 90px;}    
+
+  #bottom{
+   width: 250px;
+   position: relative;
+   top: -490px;
+   height: 100px;
+  }
+  .txt{
+      font-size: 20px;
+      position: relative;
+      z-index: 1;
+      top: -300px;
+      left: 0px;
+  }
+  #txt1 {
+      font-size: 20px;
+      width: 300px;
+      left: 30px;
+  }
+  #txt2{
+      font-size: 15px;
+      width: 320px;
+      top: 150px;
+      left: 20px;
+  }
+  #butt{
+      top: 230px;
+      left: 140px;
+      width: 80px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

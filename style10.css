@@ -1,0 +1,680 @@
+*{
+    font-family: "Segoe UI Semibold";
+	margin: 0;
+	padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+        display: none;
+      }
+      #toggle{
+        display: none;
+      }
+      label{
+        display: none;
+    }
+    .txt h2{
+      font-size:80px; 
+    }
+    .txt p{
+      font-size: 25px;
+    }
+
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  background: rgba(255,255,255,.5);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 0px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-logo {
+    position: relative;
+    display: inline-block;
+    top: 5px;
+    left: 100px;}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li a:hover{
+  color: grey;
+
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 71px;
+  padding-left: 25px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #000000;
+  transition:.3s linear;
+  left: -700px;
+}
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 300px; /* Stay at the top */
+    right:  0;
+    background-color: none; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  #mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    right:  -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 5px 0px 0px 5px; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    right: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 20px;
+    background-color: black;
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: black; 
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: black;
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: black;}
+    .logoVerst{
+        display: none;
+    }
+
+    .video{
+        position: relative;
+        position: relative;
+        width: 100%;
+    }
+    /*...........  */
+    .history{
+        font-family: "Segoe UI Semibold";
+        position: relative;
+        top: 40px;
+    }
+    #history1{
+        position: relative;
+        font-size: 40px;
+        width: 700px;
+        left: 450px;
+        top: 50px;
+    }
+    #history2{
+        font-size: 18px;
+        position: relative;
+        width: 700px;
+        left: 450px;
+        top: 100px;
+    }
+ /* ........... */
+    .portret{
+        position: relative;
+        color: azure;
+    }
+    .portret img{
+        position: relative;
+        width: 500px;
+        top: 150px;
+        left: 150px;
+        height: 350px;
+    }
+    #ptext1{
+        position: relative;
+        font-size: 45px;
+        top: 350px;
+        left: 750px;
+        border-bottom: 3px solid azure;
+        width: 150px;
+    }
+    #ptext2{
+        position: relative;
+        width: 600px;
+        top: 400px;
+        left: 750px;
+    }
+    .black_phon{
+        top: -265px;
+        position: relative;
+        width: 1600px;
+        z-index: -1;
+        height: 500px;
+    }
+ /* ............. */
+    .corn{
+      position: relative;
+      color: #000000;
+    }
+    #corn1{
+      font-size: 45px;
+      position: relative;
+      top: -200px;
+      text-align: center;
+    }
+    #corn2{
+      position: relative;
+      font-size: 18px;
+      top: -150px;
+      width: 600px;
+      left: 470px;
+    }
+
+
+    /* ............... */
+
+    .begin{
+      position: relative;
+    }
+    .begin img{
+      position: relative;
+      width: 720px;
+      height: 400px;
+      top: -20px;
+      left: 690px;
+    }
+    #htext1{
+      position: relative;
+      width: 500px;
+      top: -390px;
+      left: 110px;
+      font-size: 25px;
+    }
+    #htext2{
+      position: relative;
+      width: 500px;
+      top: -350px;
+      left: 110px;
+    }
+/* ............ */
+    .rings img{
+      position: relative;
+      width: 720px;
+      height: 400px;
+      top: -200px;
+      left: 110px;
+    }
+    #ring1{
+      position: relative;
+      top: -10px;
+      left: 890px;
+      font-size: 25px;
+    }
+    #ring2{
+      position: relative;
+      top: 30px;
+      left: 890px;
+      width: 500px;
+    }
+    /* ......... */
+    .audi img{
+      position: relative;
+      width: 720px;
+      height: 400px;
+      top: -140px;
+      left: 690px;
+    }
+    #audi1{
+      position: relative;
+      width: 500px;
+      top: -500px;
+      left: 110px;
+      font-size: 25px;
+    }
+    #audi2{
+      position: relative;
+      width: 500px;
+      top: -460px;
+      left: 110px;
+    }
+
+    /* ,,,,,,,,,,,, */
+    .lastw img{
+       top: -220px;
+        position: relative;
+        width: 1600px;
+        z-index: -1;
+        height: 300px;
+    }
+    #lastw1{
+      position: relative;
+      top: -480px;
+      color: azure;
+      text-align: center;
+      font-size: 40px;
+      z-index: 1;
+    }
+    #lastw2{
+      position: relative;
+      top: -440px;
+      width: 800px;
+      color: azure;
+      font-size: 20px;
+      left: 360px;
+    }
+
+
+    /* Icon */
+       /* icon twit yout */
+    /* Let's style the wrapper in such away that, 
+it should always be at the center of the browser */
+.wrapper {
+  position: absolute;
+  top: 3500px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
+}
+
+/* Style the Un-order list by setting its list-style to none */
+.wrapper ul {
+  list-style: none;
+}
+
+/* Style the list items inside the UL list, by setting its width, height and line-height 
+  and float them to left and set its border and border-radius.
+ */
+.wrapper ul li {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 5px solid #D8E2DC;
+  float: left;
+  transition: all 0.5s ease;
+}
+
+/* Style the icons by setting its color and margin-top value to 20px 
+to align it properly */
+.wrapper ul li .fa {
+  color: #D8E2DC;
+  margin-top: 20px;
+  transition: all 0.5s ease;
+}
+
+/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+  to icons for glowing effect and use transition property for smooth transition effect. */
+/* /facebook/ */
+.wrapper ul li:hover.facebook {
+  border: 5px solid #3b5998;
+  box-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook {
+  color: #3b5998;
+  text-shadow: 0 0 15px #3b5998;
+  transition: all 0.5s ease;
+}
+
+/* /twitter/ */
+.wrapper ul li:hover.twitter {
+  border: 5px solid #00aced;
+  box-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-twitter {
+  color: #00aced;
+  text-shadow: 0 0 15px #00aced;
+  transition: all 0.5s ease;
+}
+
+/* instagram */
+.wrapper ul li:hover.instagram {
+  border: 5px solid #bc2a8d;
+  box-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+  color: #bc2a8d;
+  text-shadow: 0 0 15px #bc2a8d;
+  transition: all 0.5s ease;
+}
+
+/* google */
+.wrapper ul li:hover.google {
+  border: 5px solid #dd4b39;
+  box-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-google {
+  color: #dd4b39;
+  text-shadow: 0 0 15px #dd4b39;
+  transition: all 0.5s ease;
+}
+
+/* whatsapp */
+.wrapper ul li:hover.youtube {
+  border: 5px solid red;
+  box-shadow: 0 0 15px red;
+  transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-youtube {
+  color: red;
+  text-shadow: 0 0 15px red;
+  transition: all 0.5s ease;
+}
+
+/* иконка */
+.wrapper {
+  position: relative;
+  top: -250px;
+  text-align: center;
+    width: 600px;
+    display: flex;
+}
+.wrapper ul li{
+    margin:15px;
+}
+.wrapper ul li.google{
+    margin-left: 15px;
+}
+.wrapper ul li.facebook{
+    margin-left: 15px;
+}
+.wrapper ul li.twitter{
+    margin-left: 15px;
+}
+.wrapper ul li.youtube{
+    margin-left: 15px;
+}
+.bottom1 {
+ width: 50%;
+}
+.logoVerst{
+    display: none;
+}
+/* текст после иконки*/
+#bottom{
+  margin-top: -250px; 
+  opacity: 0.4;
+  margin-left: 150px;
+  margin-right: auto;
+  text-align: center;
+  width:  1200px;
+}
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+@media screen and (max-width: 660px){
+  #myBtn{
+    position: relative;
+    left: 330px;
+    position: fixed;
+  }
+  .header a{
+    text-decoration: none;
+    color: black;
+  }
+ 
+  .video{
+    position: relative;
+    width: 100%;
+    height: 250px;
+    top: 20px;
+  }
+  .sidenav{
+      display: none;
+  }
+.menu-main{
+    display: none;
+}
+.logoVerst { 
+  position: absolute;
+  display: block;
+  top: -2px;
+  left: 130px;
+}
+ .menu{
+ display: none;
+}
+.navbar-logo{
+     display: none;
+ }
+label{
+display: block;
+}
+label{
+margin: 10px 0 -10px 10px ;
+font-size: 35px;
+cursor: pointer;
+}
+
+#toggle:checked + .header{
+display: none;
+}
+.header div{
+border-top: 1px solid black ;
+padding: 10px 1px;
+text-align: center;
+width: 375px;
+}
+.header{
+  display: block;
+font-size: 20px;
+ }
+
+ .history{
+   position: relative;
+ }
+ #history1{
+   position: relative;
+   font-size: 20px;
+   width: 340px;
+   left: 10px;
+   top: -10px;
+ }
+ #history2{
+   position: relative;
+   width: 300px;
+   margin-top: 0px;
+   left: 30px;
+   top: 0px;
+ }
+ .black_phon{
+   display: none;
+ }
+ .portret{
+  color: black;
+ }
+ .portret img{
+   height: 250px;
+  left: 0px;
+  width: 100%;
+  top: -100px;   
+ }
+ #ptext1{
+   position: relative;
+   left: 0;
+   z-index: 1;
+   top: 380px;
+   font-size: 30px;
+   left: 55px;
+   width: 350px;
+ }
+ #ptext2{
+   position: relative;
+   width: 300px;
+   left: 30px;
+   top: 420px;
+   font-size: 20px;
+ }
+ .corm{
+ display: none;
+ }
+ .begin img{
+   position: relative;
+   width: 100%;
+   height: 250px;
+   top: 250px;
+   left: 0px;
+ }
+ #htext1{
+   position: relative;
+   top: 250px;
+   left: 30px;
+   font-size: 25px;
+ }
+ #htext2{
+   position: relative;
+   width: 300px;
+   top: 270px;
+   left: 30px;
+ }
+
+
+ .rings img{
+  position: relative;
+  width: 100%;
+  height: 250px;
+  top: 140px;
+  left: 0px;
+ }
+ #ring1{
+   position: relative;
+   top: 600px;
+   left: 70px;
+   font-size: 30px;
+   z-index: 1;
+ }
+ #ring2{
+   position: relative;
+   width: 300px;
+   top: 650px;
+   left: 30px;
+ }
+ .audi img{
+   position: relative;
+   width: 100%;
+   height: 250px;
+   top: 450px;
+   left: 0px;
+ }
+ #audi1{
+   position: relative;
+   font-size: 30px;
+   width: 330;
+   top: 450px;
+   left: 50px;
+ }
+ #audi2{
+   position: relative;
+   top: 470px;
+   width: 300px;
+   left: 40px;
+ }
+ .lastw img{
+   position: relative;
+   width: 100%;
+   height: 300px;
+   top: 500px;
+ }
+ #lastw1{
+   position: relative;
+   left: 30px;
+   font-size: 30px;
+   width: 330px;
+   top: 220px;
+   text-align: left;
+ }
+ #lastw2{
+   position: relative;
+   left: 30px;
+   width: 300px;
+   top: 240px;
+   font-size: 15px;
+ }
+
+ .wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  top: 800px;
+  text-align: center;
+    width: 100px;
+    display: flex;
+    left:  190px;
+}
+.wrapper ul li{
+    position: relative;
+    top: 20px;
+    margin:15px;
+    left: -15px;
+}
+.wrapper ul li.google{
+    margin-left: 15px;
+}
+.wrapper ul li.facebook{
+    margin-left: 15px;
+}
+.wrapper ul li.twitter{
+    margin-left: 15px;
+}
+.wrapper ul li.youtube{
+    margin-left: 15px;
+}
+.wrapper ul li{
+    margin-top: 120px;
+  }
+  #bottom{
+      position: relative;
+      width: 300px;
+      left: -120px;
+      top: 570px;
+      text-align: left;
+  }
+}

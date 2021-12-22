@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+ 
+ 
+ }
+ 
+ html{
+    overflow-x: hidden;
+ }
+ body{
+    margin: 0;
+    margin-bottom: 0;
+    background-image: url(https://wonderfulengineering.com/wp-content/uploads/2013/11/Audi-wallpaper-0.jpg);
+    background-size: 100%;
+    font-family: 'Montserrat', sans-serif;
+     color: #606060;
+     font-size: 20px;
+     
+ }
+ 
+ 
+ 
+ 
+ 
+.logo img{
+    height: 60px;
+    width: 200px;
+     z-index: 2;
+     position: relative;
+     left: 30px;
+     top: 40px;
+
+ }
+ 
+ .mobilephoto{
+    display: none;
+ }
+ 
+ 
+ 
+ .transparent {
+    height: 950px;
+    position: relative;
+    max-width: 600px;
+    padding: 315px 50px;
+    
+    margin: 0px auto;
+    top: -60px;
+    background-image: url();
+    background-size: cover;
+
+ }
+ .transparent:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -1600px;
+    right: -800px;
+    bottom: -12px;
+    background: none;
+    
+ }
+.voiti{
+    width: 500px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    border-color: blue;
+}
+ .form-inner {
+    position: relative;
+ 
+ }
+ .form-inner h3 {
+    position: relative;
+    margin-top: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+ }
+ .form-inner h3:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 2px;
+    width: 80px;
+    background: #1762EE; /*the color line located at the bottom of "registration"*/
+ }
+ .form-inner label {
+    display: block;
+    padding-left: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, .6);
+    text-transform: uppercase;
+    font-size: 14px;
+ }
+ .form-inner input {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 10px 0 15px;
+    border-width: 0;
+    line-height: 40px;
+    border-radius: 20px;
+    color: white;
+    background: rgba(62, 59, 59, 0.7); /*цвет внутри textarea имя пользователся и пароль */
+    font-family: 'Roboto', sans-serif;
+ }
+ .form-inner input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+ }
+ #custom-checkbox+label {
+    position: relative;
+    margin: 20px 0;
+    text-transform: none;
+    cursor: pointer;
+ }
+ #custom-checkbox+label:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: text-top;
+    background: white; /*checkbox color*/
+ }
+ #custom-checkbox:checked+label:before {
+    background: none;
+ }
+ #custom-checkbox:checked+label:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    left: 20px;
+    top: 9px;
+    background: white;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+ }
+ .form-inner input[type="submit"] {
+    background: #1762EE; /*цвет кнопки Войти*/
+ }
+ 
+ @media (max-width: 375px){
+  
+    body {
+        overflow-y: hidden;
+       overflow-x: hidden;
+         /*font-size: 16px;
+         width: 375px;*/
+         height: 812px;
+         background-image: none;
+        
+ 
+     }
+
+     .logo{
+        display: block;
+     }
+     .logo img{
+        display: none;
+     }
+ 
+ 
+   .transparent{
+    position: relative;
+     max-width: 400px;
+     z-index: 2;
+      
+     padding: 250px 60px;
+     margin: 0;
+    /* background-image: url(https://wallpaperaccess.com/full/916652.jpg);*/
+     justify-content: center;
+     left: 0px;
+     top: -50px;
+     
+     /*background-size: 250%;*/
+ 
+ 
+   }
+
+.mobilephoto{
+    display: block;
+    position: relative;
+    top: -1050px;
+    left: -300px;
+}
+.mobilephoto img{
+    width: 975px;
+    height: 1000px;
+}
+.voiti{
+    width: 250px;
+}
+
+   .transparent:before { /*нужен для того чтобы страница не скролилась*/
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    background: none;
+ }
+ 
+     .container {
+       /*position: relative;
+         padding: 0 45px;
+         top: 800px;*/
+         display: none;
+     }
+     
+    /* .post-header {
+         padding-left: 26px;
+         border-left: 4px solid #D8D8D8;
+         margin-left: -30px;
+         position: relative;
+         left: -50px;
+ 
+     }
+     .post-content p{
+       text-align: center;
+       width: 300px;
+       position: relative;
+       left: -65px;
+     }
+     .post-meta{
+       width: 320px;
+       font-size: 20px;
+     }*/
+ 
+  
+ }
